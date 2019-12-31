@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":330:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:3:{s:69:"Rockersweb\LaravelRlog\Test\RlogTest::it_adds_request_details_to_logs";d:0.166;s:85:"Rockersweb\LaravelRlog\Test\RlogTest::it_skips_input_details_as_per_the_configuration";d:0.016;s:84:"Rockersweb\LaravelRlog\Test\RlogTest::it_adds_other_details_as_per_the_configuration";d:0.009;}}}

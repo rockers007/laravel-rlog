@@ -3,8 +3,8 @@
     "description": "its log for all laravel projects.so its make debugging very easy.",
     "type": "library",
     "require": {
-        "php": "7.1",
-        "illuminate/support": "5.6",
+        "php": ">=7.1",
+        "laravel/framework": "6.0",
         "monolog/monolog": "1.23.*"
     },
      "require-dev": {
