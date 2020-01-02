@@ -1,6 +1,6 @@
 <?php
 
-namespace Rockersweb\LaravelRlog\Test;
+namespace Rockers\PlaidStripe\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -8,7 +8,7 @@ abstract class TestCase extends Orchestra
 {
     protected function getPackageProviders($app)
     {
-        return ['Rockersweb\LaravelRlog\LaravelRlogServiceProvider'];
+        return ['Rockers\PlaidStripe\PlaidStripeServiceProvider'];
     }
 
     /**
@@ -19,6 +19,6 @@ abstract class TestCase extends Orchestra
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('logging.channels.stack.tap', [\Rockersweb\LaravelRlog\Rlog::class]);
+       
     }
 }

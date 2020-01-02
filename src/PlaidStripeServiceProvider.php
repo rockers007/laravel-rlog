@@ -1,10 +1,10 @@
 <?php
 
-namespace Rockersweb\LaravelRlog;
+namespace Rockers\PlaidStripe;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelRlogServiceProvider extends ServiceProvider
+class PlaidStripeServiceProvider extends ServiceProvider
 {
     /**
      * Publishes configuration file.
@@ -13,10 +13,12 @@ class LaravelRlogServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'payment');
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/laravel_rlog.php' => config_path('laravel_rlog.php'),
-            ], 'laravel-rlog-config');
+                __DIR__.'/config/credentials.php' => config_path('credentials.php'),
+            ], 'credentials-config');
         }
     }
 
@@ -28,8 +30,8 @@ class LaravelRlogServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/laravel_rlog.php',
-            'laravel_rlog'
+            __DIR__.'/config/credentials.php',
+            'credentials'
         );
     }
 }
