@@ -26,7 +26,7 @@ composer require rockers/plaid-stripe
 ```
 'production_stack' => [
     'driver' => 'stack',
-    'tap' => [Rockersweb\LaravelRlog\Rlog::class],
+    'tap' => [Rockers\PlaidStripe\PlaidStripe::class],
     'channels' => ['daily', 'slack'],
 ],
 ```
