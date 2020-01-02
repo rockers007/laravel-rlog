@@ -12,7 +12,7 @@
 ## Requirements
 
 * PHP 7.1+
-* Laravel 6.0+
+* Laravel 5.6+
 
 
 ## Installation

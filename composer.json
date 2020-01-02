@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": ">=5.6",
-        "laravel/framework": "6.0",
+        "laravel/framework": ">=5.6",
         "cartalyst/stripe-laravel": "11.0.*"
     },
      "require-dev": {
