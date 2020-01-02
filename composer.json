@@ -1,5 +1,5 @@
 {
-    "name": "rakesh/plaid-stripe",
+    "name": "rockers/plaid-stripe",
     "description": "its sdk for plaid stripe payment process.",
     "type": "library",
     "require": {

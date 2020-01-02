@@ -19,7 +19,7 @@
 
 1) Install the package by running this command in your terminal/cmd:
 ```
-composer require rockersweb/laravel-rlog
+composer require rockers/plaid-stripe
 ```
 
 2) Add this package's LogEnhancer class to the tap option of your log channel in **config/logging.php**:
